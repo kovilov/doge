@@ -1,0 +1,57 @@
+hr {
+    border: 2px solid #8c62b4;
+}
+h1, h2, h3 {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    font-family: Arial;
+}
+button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    overflow: auto;
+}
+.modal_content {
+    margin: 350px auto;
+    background-color: #fff;
+    padding: 50px;
+    width: 20%;
+    z-index: 99999;
+}
+.close_modal {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px;
+    border-bottom: 2px  solid #e3e3e3;
+    border-top: 2px  solid #e3e3e3;
+    border-right: 2px  solid #e3e3e3;
+    border-left: 2px  solid #e3e3e3;
+    outline: none;
+}
+.item {
+    transition: transform .2s ease;
+}
+.item:hover {
+    transition: transform .2s ease;
+}
+h4 {
+    color: #665179;
+}
