@@ -108,3 +108,14 @@ h4 {
 .copy>p {
     color: white;
 }
+@media screen and (max-width: 500px) {
+    img {
+        width: 200px;
+    }
+    .test_width {
+        text-align: left;
+    }
+    body {
+        text-align: center;
+    }
+}
