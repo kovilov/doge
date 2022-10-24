@@ -55,3 +55,56 @@ input {
 h4 {
     color: #665179;
 }
+.modalpre {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    overflow: auto;
+}
+.modal_contentpre {
+    margin: 350px auto;
+    background-color: #fff;
+    padding: 10px;
+    width: 60%;
+    z-index: 99999;
+}
+.close_modalpre {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.msg {
+    text-align: center;
+}
+.first_da {
+    position: absolute;
+    top: 420px;
+    right: 850px;
+    color: #000;
+}
+.first_net {
+    position: absolute;
+    top: 487px;
+    right: 740px;
+    color: #000;
+}
+.second_da {
+    position: absolute;
+    top: 521px;
+    right: 800px;
+    color: #000;
+}
+.copy {
+    padding-left: 300px;
+}
+.copy>a {
+    font-weight: bold;
+}
+.copy>p {
+    color: white;
+}

@@ -14,7 +14,7 @@
         <li><a href="main.html" style="padding-left: 20px; font-size: 30px; padding-top: 20px;">DogeHacks🐶</a></li>
         <li style="padding-left:850px; padding-top: 20px;"><a href="main.html" style="font-family: Arial;" class="item">Home</a></li>
         <li style="padding-top: 20px;"><a href="projects.html" style="font-family: Arial;">Projects</a></li>
-        <li style="padding-top: 20px;"><a href="api.html" style="font-family: Arial;">API</a></li>
+        <li style="padding-top: 20px;"><a href="api" style="font-family: Arial;">API</a></li>
         <li style="padding-top: 20px;"><a href="https://t.me/+fWLr5n0Urw41YjJk">DogeChat</a></li>
         <li style="padding-top: 20px;" id="support"><a >Support</a></li>
         <li style="padding-top: 20px;" id="btn_modal_window"><a >Profile</a></li>
@@ -23,11 +23,20 @@
     <hr>
     <h2>Привет! Здесь ты можешь купить лучшие читы и хаки для популярных игр</h2>
     <h4 style="text-align: center;" id="free">! Успей получить 100$ | 6000₽!</h4>
+    <h3>Почему именно наш чит?</h3>
+    <p style="padding-left: 840px;"><img src="safe.png" width="50px"></p><p class="first_da"><img src="price.png" width="50px"></p>
+    <p style="padding-left: 720px;">Отличная защита от античита</p>
+    <p style="padding-left: 730px;">вы можете не волноваться</p>
+    <p style="padding-left: 720px;">что античит вас заблокирует</p>
+    <p class="first_net">Отличная цена для товара</p>
+    <p class="second_da">Все 5₽ за 1 день!</p>
+    <!-- img -->
+    <p style="text-align: center;" id="test"><img src="cs.png" width="700px;"></p>
     <p style="text-align: center;"><img src="test.png" width="700px"></p>
     <!-- <p style="text-align: center; font-size: 10px; font-weight: bold;">У нас есть чит на разные игры на (этом фото показан чит на Standoff 2)</p> -->
     <!-- <p style="text-align: center;"><button id="btn">Download (Beta)</button></p> -->
     <h3 style="text-align: center; color: white;">Купить приватный чит</h3>
-    <p style="text-align: center; color: white;">В комментарии укажите свой тг</p>
+    <p style="text-align: center; color: white;">В комментарии киви укажите свой тг (Чтобы мы могли зарегистрировать вас)</p>
         <p style="text-align: center;">
             <select name="ch_select" id="cheat">
                 <option value="day">Day</option>
@@ -58,6 +67,17 @@
     </div>
 </div>
 
+<!-- foto pre -->
+
+
+
+<!-- end -->
+<div class="modalpre" id="mypre">
+    <div class="modal_contentpre">
+        <span class="close_modalpre">&times;</span>
+            <p style="text-align: center;"><img src="cs.png" width="800px"></p>
+    </div>
+</div>
 <!-- modal end -->
 
 
@@ -85,6 +105,14 @@
     <p style="text-align: center; color: white;">Если у вас возникли проблемы пишите:</p>
     <p style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" width="70px;"></p>
     <p style="text-align: center;"><a href="https://t.me/txtxtadh" target="_blank" style="color: blueviolet;">@txtxtadh</a></p>
+    <p>ㅤ</p>
+    <p>ㅤ</p>
+    <p>ㅤ</p>
+    <hr>
+    <h4 class="copy">DOGEHACKS LLC © 2022 All Rights Reserved.</h4>
+    <p class="copy" style="color: white;">Contacts:</p>
+    <p class="copy"><a href="https://t.me/txtxtadh">Telegram </a></p>
+    <p class="copy"><a href="mailto:dogehacksoftware@gmail.com">dogehacksoftware@gmail.com</a></p>
     <!-- <p style="font-size: 10px; padding-right: 400px;">· License</p>
     <p style="font-size: 10px; padding-right: 400px;">· Authorㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ@copyright</p>
     <p style="font-size: 10px; padding-right: 400px;">· Price info</p> -->
@@ -148,6 +176,25 @@
 
     free.onclick = function () {
         window.location.href = "free.html";
+    }
+
+
+    let test = document.getElementById("test");
+    let test_pre = document.getElementById("mypre");
+    let close_pre = document.getElementsByClassName("close_modalpre")[0];
+
+    test.onclick = function () {
+        test_pre.style.display = "block";
+    }
+
+    close_pre.onclick = function () {
+        test_pre.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if(event.target == modal) {
+            test_pre.style.display = "none";
+        }
     }
 </script>
 <script src="proverka.js"></script>
