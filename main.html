@@ -29,10 +29,10 @@
     <p style="padding-left: 730px;" class="test_width">вы можете не волноваться</p>
     <p style="padding-left: 720px;" class="test_width">что античит вас заблокирует</p>
     <p class="first_net" class="test_width">Отличная цена для товара</p>
-    <p class="second_da" class="test_width">Все 5₽ за 1 день!</p>
+    <p class="second_da" class="test_width">Всего 5₽ за 1 день!</p>
     <!-- img -->
     <p style="text-align: center;" id="test"><img src="cs.png" width="700px;"></p>
-    <p style="text-align: center;"><img src="test.png" width="700px"></p>
+    <p style="text-align: center;" id="test_foto"><img src="test.png" width="700px"></p>
     <!-- <p style="text-align: center; font-size: 10px; font-weight: bold;">У нас есть чит на разные игры на (этом фото показан чит на Standoff 2)</p> -->
     <!-- <p style="text-align: center;"><button id="btn">Download (Beta)</button></p> -->
     <h3 style="text-align: center; color: white;">Купить приватный чит</h3>
@@ -49,6 +49,23 @@
         <p style="text-align: center;"><button id="buy">Buy</button></p>
 
 
+
+        <!-- new buy -->
+        <p>ㅤ</p>
+        <p>ㅤ</p>
+        <p>ㅤ</p>
+
+
+
+            <div class="krug">
+                <h4 class="msg">Приобрести чит</h4>
+                <p class="msg">✔ 30 Дней - 50 ₽</p>
+                <p class="msg">✔ Хорошая защита от системы VAC и обход Standoff 2</p>
+                <p class="msg">✔ 24/7 Поддержка</p>
+                <p class="msg">✔ Вход в личный кабинет в боте тг</p>
+                <p class="msg"><button id="buy_btn">Купить</button></p>
+            </div>
+        <!-- end -->
 
 <!-- modal -->
 
@@ -75,12 +92,19 @@
 <div class="modalpre" id="mypre">
     <div class="modal_contentpre">
         <span class="close_modalpre">&times;</span>
-            <p style="text-align: center;"><img src="cs.png" width="800px"></p>
+            <p style="text-align: center;"><a href="cs.png"><img src="cs.png" width="800px"></a></p>
     </div>
 </div>
 <!-- modal end -->
 
-
+<!-- foto modal -->
+<div class="modalpre_foto" id="mypre_foto">
+    <div class="modal_contentpre_foto">
+        <span class="close_modalpre_foto">&times;</span>
+            <p style="text-align: center;"><a href="test.png"><img src="test.png" width="800px"></a></p>
+    </div>
+</div>
+<!-- foto modal end -->
 
 
     <!-- <h3 style="color: white;">Краткие ответы на большие вопросы!</h3>
@@ -167,7 +191,10 @@
 
 
 
-
+    const buy_btn = document.getElementById("buy_btn");
+    buy_btn.onclick = function () {
+        window.location.href = "https://oplata.qiwi.com/form?invoiceUid=6d4ab8be-609b-4a39-aee4-4d6803f20598";
+    }
 
 
 
@@ -178,7 +205,7 @@
         window.location.href = "free.html";
     }
 
-
+    // foto 1 pre
     let test = document.getElementById("test");
     let test_pre = document.getElementById("mypre");
     let close_pre = document.getElementsByClassName("close_modalpre")[0];
@@ -194,6 +221,24 @@
     window.onclick = function (event) {
         if(event.target == modal) {
             test_pre.style.display = "none";
+        }
+    }
+    //foto 2 pre
+    let test_foto = document.getElementById("test_foto");
+    let test_pre_foto = document.getElementById("mypre_foto");
+    let close_pre_foto = document.getElementsByClassName("close_modalpre_foto")[0];
+
+    test_foto.onclick = function () {
+        test_pre_foto.style.display = "block";
+    }
+
+    close_pre_foto.onclick = function () {
+        test_pre_foto.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if(event.target == modal) {
+            test_pre_foto.style.display = "none";
         }
     }
 </script>
