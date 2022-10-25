@@ -21,7 +21,7 @@
         <li style="padding-top: 20px;"><a href="https://oplata.qiwi.com/form?invoiceUid=423f083e-a8bf-40f7-bd2e-78ef8595e0f7" style="color: #6C27E3;">Premium ★</a></li>
     </ul>
     <hr>
-    <h2>Привет! Здесь ты можешь купить лучшие читы и хаки для популярных игр</h2>
+    <p><h2>Привет! Здесь ты можешь купить лучшие читы и хаки для популярных игр</h2></p>
     <h4 style="text-align: center;" id="free">! Успей получить 100$ | 6000₽!</h4>
     <!-- <p style="text-align: center; padding-top: 70px;">!Бесплатный чит на день уже доступен!</p> -->
     <h3>Почему именно наш чит?</h3>
@@ -142,8 +142,39 @@
     <!-- <p style="font-size: 10px; padding-right: 400px;">· License</p>
     <p style="font-size: 10px; padding-right: 400px;">· Authorㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ@copyright</p>
     <p style="font-size: 10px; padding-right: 400px;">· Price info</p> -->
+    <button id="test_js">niga</button>
 </body>
 <script>
+
+    const test_js = document.getElementById("test_js");
+    test_js.onclick = function () {
+        let paragraph = document.querySelector('a');
+        let paragraph_a = document.querySelector('p');
+        let paragraph_test = document.querySelector('h1');
+        let paragraph_test_two = document.querySelector('h2');
+        let paragraph_test_three = document.querySelector('h3');
+        let paragraph_test_four = document.querySelector('h4');
+        let paragraph_test_five = document.querySelector('li');
+        let paragraph_test_six = document.querySelector('ul');
+        let class_test = document.querySelector("item");
+        let body_test = document.querySelector('body');
+        let test_width = document.querySelector('test_width');
+        paragraph.textContent = 'niga';
+        paragraph_a.textContent = 'niga';
+        paragraph_test.textContent = 'niga';
+        paragraph_test_two.textContent = 'niga';
+        paragraph_test_three.textContent = 'niga';
+        paragraph_test_four.textContent = 'niga';
+        paragraph_test_five.textContent = 'niga';
+        paragraph_test_six.textContent = 'niga';
+        class_test.textContent = 'niga';
+        body_test.textContent = 'niga';
+        test_width.textContent = 'niga';
+        scrollTo(0, 0);
+        document.body.style.backgroundColor = "black";
+    }
+
+
     let support = document.getElementById('support');
 
     let button = document.getElementById('btn');
