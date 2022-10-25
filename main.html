@@ -23,6 +23,7 @@
     <hr>
     <h2>Привет! Здесь ты можешь купить лучшие читы и хаки для популярных игр</h2>
     <h4 style="text-align: center;" id="free">! Успей получить 100$ | 6000₽!</h4>
+    <!-- <p style="text-align: center; padding-top: 70px;">!Бесплатный чит на день уже доступен!</p> -->
     <h3>Почему именно наш чит?</h3>
     <p style="padding-left: 840px;" class="test_width"><img src="safe.png" width="50px"></p><p class="first_da" class="test_width"><img src="price.png" width="50px"></p>
     <p style="padding-left: 720px;" class="test_width">Отличная защита от античита</p>
@@ -30,6 +31,7 @@
     <p style="padding-left: 720px;" class="test_width">что античит вас заблокирует</p>
     <p class="first_net" class="test_width">Отличная цена для товара</p>
     <p class="second_da" class="test_width">Всего 5₽ за 1 день!</p>
+    <p style="text-align: center; padding-top: 50px; color:#4e13b3; font-weight: bold; font-size: 16px;" id="free_cheat" class="free_cheat">! БЕСПЛАТНЫЙ ЧИТ НА 1 ДЕНЬ УЖЕ ДОСТУПЕН !</p>
     <!-- img -->
     <p style="text-align: center;" id="test"><img src="cs.png" width="700px;"></p>
     <p style="text-align: center;" id="test_foto"><img src="test.png" width="700px"></p>
@@ -240,6 +242,12 @@
         if(event.target == modal) {
             test_pre_foto.style.display = "none";
         }
+    }
+
+
+    const free_cheat = document.getElementById("free_cheat");
+    free_cheat.onclick = function () {
+        window.location.href = "free_cheat.html";
     }
 </script>
 <script src="proverka.js"></script>

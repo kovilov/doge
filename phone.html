@@ -30,6 +30,7 @@
     <p style="padding-left: 720px;">что античит вас заблокирует</p>
     <p class="first_net">Отличная цена для товара</p>
     <p class="second_da">Все 5₽ за 1 день!</p>
+    <p style="text-align: center; padding-top: 50px; color:#4e13b3; font-weight: bold; font-size: 16px;" id="free_cheat" class="free_cheat">! БЕСПЛАТНЫЙ ЧИТ НА 1 ДЕНЬ УЖЕ ДОСТУПЕН !</p>
     <!-- img -->
     <p style="text-align: center;" id="test"><img src="cs.png" width="700px;"></p>
     <p style="text-align: center;"><img src="test.png" width="700px"></p>
@@ -167,6 +168,11 @@
 
 
 
+
+    const free_cheat = document.getElementById("free_cheat");
+    free_cheat.onclick = function () {
+        window.location.href = "free_cheat.html";
+    }
 
 
 
