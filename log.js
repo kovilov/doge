@@ -36,5 +36,14 @@ btn.onclick = event => {
     }
 
 };
+const btnn = document.querySelector("custom-select");
+const btnnn = document.querySelector("radios");
 
-
+btnn.onclick = function () {
+    let audioo = new Audio('sound.mp3');
+    audioo.play();
+}
+btnnn.onclick = function () {
+    let audiooo = new Audio('sound.mp3');
+    audiooo.play();
+}
