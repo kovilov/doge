@@ -1,5 +1,7 @@
 const cheat = document.getElementById('cheat');
 const btn = document.getElementById('buy');
+const sit = document.getElementById('sit');
+
 
 btn.onclick = event => {
     console.log(cheat.selectedIndex);
@@ -15,4 +17,24 @@ btn.onclick = event => {
         alert("Invalid error");
     }
 
+
+    console.log(sit.selectedIndex);
+
+    let checkedSit = sit.options[sit.selectedIndex].text;
+
+    if (checkedSit == 'Cheats') {
+
+    } 
+    else if (checkedSit == 'Forum') {
+
+    }
+    else if (checkedSit == 'Another') {
+
+    }
+     else {
+        alert("Invalid error");
+    }
+
 };
+
+
