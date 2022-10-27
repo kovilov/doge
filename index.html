@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="ico.ico">
+    <link rel="stylesheet" href="select.css">
     <title>Проверка епта</title>
     <!-- <link rel="stylesheet" href="main.css"> -->
     <!-- <link rel="stylesheet" href="navbar.css"> -->
@@ -37,13 +38,61 @@
         <!-- <input id="first" type="checkbox" placeholder="да/нет" minlength="2" maxlength="3" required> Да -->
         <!-- <p>Вы недохакер?</p>
         <input id="second" type="checkbox" placeholder="да/нет" minlength="2" maxlength="3" required> Да -->
-        <p>С какого устройства вы зашли на сайт? (это поможет нам подстроить дизайн сайта)</p>
-        <select name="ch_select" id="cheat">
-            <option value="PC">PC</option>
-            <option value="Mobile">Mobile</option>
-        </select>
-        <p></p>
-        <button id="buy">Submit</button>
+        <!-- <p>С какой целью вы зашли на сайт?</p>
+                <select name="sit_select" id="sit">
+                    <option value="Cheats">Cheats</option>
+                    <option value="Forum">Forum</option>
+                    <option value="Another">Another</option>
+                </select> -->
+                <p></p>
+                <p>С какого устройства вы зашли на сайт? (это поможет нам подстроить дизайн сайта)</p>
+                <select name="ch_select" id="cheat" required>
+                    <option value=""></option>
+                    <option value="PC">PC</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+                <p></p>
+                <p>Ваш ID Standof 2? (BETA) скоро будет классная функция)</p>
+                <input type="number" minlength="9999" maxlength="999999999">
+
+                <p>С какой целью вы зашли на сайт?</p>
+                <details class="custom-select">
+                    <summary class="radios">
+                        <input type="radio" name="item" id="default" title="Choose an option" checked>
+                        <input type="radio" name="item" id="item1" title="Cheats">
+                        <input type="radio" name="item" id="item2" title="Forum">
+                        <input type="radio" name="item" id="item3" title="Another">
+                        <input type="radio" name="item" id="item4" title="Donate)">
+                    </summary>
+                    <ul class="list">
+                        <li>
+                            <label for="item0">
+                                Choose an option
+                                <span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="item1">
+                                Cheats
+                                <span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="item2">Forum</label>
+                        </li>
+                        <li>
+                            <label for="item3">Another</label>
+                        </li>
+                        <li>
+                            <label for="item4">Donate)</label>
+                        </li>
+                    </ul>
+                </details>
+
+
+                <p></p>
+                <p><img src="jamal.jpg" width="200px;"></p>
+        <p><button id="buy">Submit</button></p>
     <!-- </form> -->
 </body>
 <script>
