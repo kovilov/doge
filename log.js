@@ -14,7 +14,7 @@ btn.onclick = event => {
         alert("Просим вас понять что сайт пока что не оптимизирован и некоторые style могут быть не настроены под ваш девайс!");
         window.location.href = "phone.html";
     } else {
-        alert("Invalid error");
+        alert("Choose an option");
     }
 
 

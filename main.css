@@ -127,7 +127,8 @@ h4 {
     color: #000;
 }
 .copy {
-    padding-left: 300px;
+    /* padding-left: 300px; */
+    text-align: center;
 }
 .copy>a {
     font-weight: bold;
@@ -162,10 +163,15 @@ h4 {
     border: 1px solid black;
     height: 300px;
     padding: 5px;
-    margin-left: 830px;
+    /*margin-left: 830px;*/
+    text-align: center;
     border-radius: 5%;
     border-color: #fff;
 }
 /* .free_cheat {
 
 } */
+body {
+    background-image: url("bg.jpg") !important;
+    /* background-size: contain !important; */
+}
