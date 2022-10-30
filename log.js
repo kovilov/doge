@@ -8,11 +8,11 @@ btn.onclick = event => {
     let checkedCheat = cheat.options[cheat.selectedIndex].text;
 
     if (checkedCheat == 'PC') {
-        window.location.href = "main.html";
+        window.location.href = "https://www.dogehacks.tk/main.html";
     } 
     else if (checkedCheat == 'Mobile') {
         alert("Просим вас понять что сайт пока что не оптимизирован и некоторые style могут быть не настроены под ваш девайс!");
-        window.location.href = "phone.html";
+        window.location.href = "https://www.dogehacks.tk/phone.html";
     } else {
         alert("Choose an option");
     }
